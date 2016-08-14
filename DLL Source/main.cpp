@@ -190,7 +190,7 @@ GMEX double pullEvent(double* buffer)
     return 0.;
 }
 
-/// ---------------------- ///
+/// --------------------- ///
 /// --- Simple Checks --- ///
 /// --------------------- ///
 
@@ -215,3 +215,9 @@ GMEX double getPlayHeight(void)
     vr::VRChaperone() -> GetPlayAreaSize(&_width, &_height);
     return _height;
 }
+
+/// --------------------- ///
+/// --- System Checks --- ///
+/// --------------------- ///
+
+

@@ -144,6 +144,13 @@ enum HMD
     vresolution = 1200
 }
 
+enum VR_CONTROLLER_LOADSTATE
+{
+    idle,
+    loading,
+    finished
+}
+
 // DLL Handling:
 var __viveDLLFilename = "htcvive.dll";
 
@@ -177,4 +184,5 @@ global.vive_external_getchaperonestate = external_define(__viveDLLFilename, "get
 
 global.vive_external_updateevents = external_define(__viveDLLFilename, "updateEvents", dll_cdecl, ty_real, 0);
 global.vive_external_pullevent = external_define(__viveDLLFilename, "pullEvent", dll_cdecl, ty_real, 1, ty_string);
+
 return undefined;
