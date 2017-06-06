@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GMVive Wrapper" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/GMVive Wrapper" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DBUILD_DLL" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/GMVive Wrapper" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-m32" />
+			<Add directory="libraries/openvr 1.0.7/include" />
+			<Add directory="libraries/glew 2.0.0/include" />
+			<Add directory="libraries/sdl 2.0.5/include/SDL2" />
+		</Compiler>
+		<Linker>
+			<Add option="-m32" />
+			<Add option="-luser32" />
+			<Add option="-lopenvr_api" />
+			<Add option="-lsdl2" />
+			<Add option="-lglew32" />
+			<Add option="-lglu32" />
+			<Add option="-lopengl32" />
+			<Add directory="libraries/openvr 1.0.7/lib32" />
+			<Add directory="libraries/glew 2.0.0/lib32" />
+			<Add directory="libraries/sdl 2.0.5/lib32" />
+		</Linker>
+		<Unit filename="gmdata.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="vrsystem.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
