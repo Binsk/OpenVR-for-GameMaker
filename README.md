@@ -7,7 +7,7 @@ This repository is intended to provide the software GameMaker: Studio with HTC V
 This entire project is compiled with MinGW / GCC and the included C++ project files are in the Code::Blocks format. This is with
 the hopes of easing into possible multi-platform support down the road.
 
-**Getting Things Running:**
+**Getting Things Running:** 
 In order to get a working project going you need several files:
 *   GameMaker script files from the example project
 *   GMVive Wrapper.dll
