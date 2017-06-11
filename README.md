@@ -13,8 +13,8 @@ In order to get a working project going you need several files:
 *   GameMaker script files from the example project
 *   GMVive Wrapper.dll
 *   SDL2.dll
-*   openvrapi.dll
-*   glew.dll
+*   openvr_api.dll
+*   glew32.dll
 
 You can find the GameMaker script files inside the example GameMaker project located in *source -> GMS 1.4 -> OpenVR Demo*.
 The GMVive Wrapper.dll is located in the binaries folder.
