@@ -1,5 +1,8 @@
+# IMPORTANT NOTICE
+
+This repositor is NOT actively maintained, uses extremely dated libraries and code, and was not structured in any useful / expandable way. I am leaving it up as a very dated reference but it is **highly** recommended that nothing is used from this repository.
+
 # OpenVR-for-GameMaker
-*Read-Me is under works*  
 **Summary:** 
 
 This repository is intended to provide the software GameMaker: Studio with HTC Vive support. It uses the OpenVR system for interfacing with the headset and the provided dll source to interface between OpenVR and GameMaker.
